@@ -72,3 +72,43 @@ function textLoad(){
 }
 textLoad();
 setInterval(textLoad, 12000);
+
+var home = document.getElementById('home_button');
+var about = document.getElementById('about_button');
+var project = document.getElementById('project_button');
+var contact = document.getElementById('contact_button');
+var key = 0;
+if(key==0){
+    home.style.color = rs.getPropertyValue('--core_key');
+}
+home.onclick = function(){
+    key=0;
+    navKey();
+}
+about.onclick = function(){
+    key=1;
+    navKey();
+}
+project.onclick = function(){
+    key=2;
+    navKey();
+}
+contact.onclick = function(){
+    key=3;
+    navKey();
+}
+function navKey(){
+    home.style.color = null;
+    about.style.color = null;
+    project.style.color = null;
+    contact.style.color = null;
+    if(key==0){
+        home.style.color = rs.getPropertyValue('--core_key');
+    }else if(key==1){
+        about.style.color = rs.getPropertyValue('--core_key');
+    }else if(key==2){
+        project.style.color = rs.getPropertyValue('--core_key');
+    }else if(key==3){
+        contact.style.color = rs.getPropertyValue('--core_key');
+    }
+}
