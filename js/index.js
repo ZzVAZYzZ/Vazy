@@ -18,6 +18,9 @@ sun.onclick = function(){
     body.style.color = "#CED6E0";
     colorMenu.style.background = "#CED6E0"
     textShadoww[0].style.textShadow = "0 0 10px #dff9fb,0 0 20px #dff9fb,0 0 40px #dff9fb,0 0 80px #dff9fb,0 0 120px #dff9fb"
+    root.style.setProperty('--core_change2', rs.getPropertyValue('--core6'));
+    root.style.setProperty('--core_change3', rs.getPropertyValue('--core5'));
+    
 }
 moon.onclick = function(){
     sun.style.display = "block";
@@ -25,8 +28,10 @@ moon.onclick = function(){
     navbar[0].style.background = "#CED6E0";
     body.style.background = "#DFE4EA"; 
     body.style.color = "#2F3542"; 
-    colorMenu.style.background = "#2F3542" 
-    textShadoww[0].style.textShadow = "0 0 10px #2F3542,0 0 20px #2F3542,0 0 40px #2F3542,0 0 80px #2F3542,0 0 120px #2F3542"   
+    colorMenu.style.background = "#2F3542" ;
+    textShadoww[0].style.textShadow = "0 0 10px #2F3542,0 0 20px #2F3542,0 0 40px #2F3542,0 0 80px #2F3542,0 0 120px #2F3542";
+    root.style.setProperty('--core_change2', rs.getPropertyValue('--core5'));
+    root.style.setProperty('--core_change3', rs.getPropertyValue('--core6'));
 }
 color.onclick = function(){
     if(i==0){
@@ -39,14 +44,31 @@ color.onclick = function(){
 }
 var rs = getComputedStyle(root);
 core[0].onclick = function(){
-    root.style.setProperty('--core', rs.getPropertyValue('--core1'));
+    root.style.setProperty('--core_change1', rs.getPropertyValue('--core1'));
 }
 core[1].onclick = function(){
-    root.style.setProperty('--core', rs.getPropertyValue('--core2'));
+    root.style.setProperty('--core_change1', rs.getPropertyValue('--core2'));
 }
 core[2].onclick = function(){
-    root.style.setProperty('--core', rs.getPropertyValue('--core3'));
+    root.style.setProperty('--core_change1', rs.getPropertyValue('--core3'));
 }
 core[3].onclick = function(){
-    root.style.setProperty('--core', rs.getPropertyValue('--core4'));
+    root.style.setProperty('--core_change1', rs.getPropertyValue('--core4'));
 }
+var text = document.getElementsByClassName("second-text");
+function textLoad(){
+    setTimeout(() => {
+        text[0].textContent = "Web Developer";
+    },0);
+    setTimeout(() => {
+        text[0].textContent = "Web Designer";
+    },3000);
+    setTimeout(() => {
+        text[0].textContent = "Vazy-sama";
+    },6000);
+    setTimeout(() => {
+        text[0].textContent = "Handsome";
+    },9000);
+}
+textLoad();
+setInterval(textLoad, 12000);

@@ -12,7 +12,11 @@
   --core2: #f0932b;
   --core3: #22a6b3;
   --core4: #78e08f;
-  --core: var(--core3);
+  --core5: #DFE4EA;
+  --core6: #2D3436;
+  --core_change1: var(--core3);
+  --core_change2: var(--core5);
+  --core_change3: var(--core6);
 }
 
 body {
@@ -32,8 +36,8 @@ body .navbar .vazy_box {
   margin: 0 auto;
   text-align: center;
   margin-top: 80px;
-  border-top: 5px solid var(--core);
-  border-right: 5px solid var(--core);
+  border-top: 5px solid var(--core_change1);
+  border-right: 5px solid var(--core_change1);
 }
 body .navbar .vazy_box .vazy_text {
   width: 106px;
@@ -155,15 +159,55 @@ body .parent .son1 div:first-child {
 body .parent .son1 div:first-child span {
   font-family: "Inspiration";
   font-size: 1.3em;
-  color: var(--core);
+  color: var(--core_change1);
 }
 body .parent .son1 div:nth-child(2) {
-  text-align: center;
   padding-top: 20px;
+  position: relative;
 }
 body .parent .son1 div:nth-child(2) span {
   font-size: 1em;
-  color: var(--core);
+  color: var(--core_change1);
+}
+body .parent .son1 div:nth-child(2)::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 50%;
+  background: var(--core_change2);
+  border-left: 2px solid var(--core_change3);
+  animation: animate 6s steps(12) infinite;
+}
+@keyframes animate {
+  0% {
+    left: 24%;
+  }
+  20% {
+    left: 24%;
+  }
+  30% {
+    left: 60%;
+  }
+  40% {
+    left: 60%;
+  }
+  50% {
+    left: 24%;
+  }
+  60% {
+    left: 24%;
+  }
+  80% {
+    left: 60%;
+  }
+  90% {
+    left: 60%;
+  }
+  100% {
+    left: 24%;
+  }
 }
 body .parent .son1 div:last-child {
   padding-top: 20px;
