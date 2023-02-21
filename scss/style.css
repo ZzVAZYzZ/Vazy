@@ -22,6 +22,7 @@
 body {
   background: #DFE4EA;
   color: #2F3542;
+  z-index: -2;
 }
 body .navbar {
   width: 280px;
@@ -71,6 +72,7 @@ body .navtheme {
   position: fixed;
   top: 100px;
   right: 25px;
+  z-index: 5;
 }
 body .navtheme #sun-display {
   cursor: pointer;
@@ -215,6 +217,9 @@ body .parent .son1 div:last-child {
 }
 body .parent .son2 img {
   width: 500px;
-  height: 685px;
-  padding: 20px;
+  height: 500px;
+  padding: 50px;
+  border-radius: 100rem;
+  border: 5px solid var(--core_change1);
+  position: relative;
 }/*# sourceMappingURL=style.css.map */

@@ -20,6 +20,7 @@
 body{
     background: #DFE4EA;
     color: #2F3542;
+    z-index: -2;
     // nav
     .navbar{
         width: 280px;
@@ -72,6 +73,7 @@ body{
         position: fixed;
         top: 100px;
         right: 25px;
+        z-index: 5;
         #sun-display{
             cursor: pointer;
             i{
@@ -180,6 +182,7 @@ body{
                     background: var(--core_change2);
                     border-left: 2px solid var(--core_change3);
                     animation: animate 6s steps(12) infinite;
+                    
                 }
                 @keyframes animate{
                     0%{
@@ -219,8 +222,11 @@ body{
         .son2{
             img{
                 width: 500px;
-                height: 685px;
-                padding: 20px;
+                height: 500px;
+                padding: 50px;
+                border-radius: 100rem;
+                border: 5px solid var(--core_change1);
+                position: relative;
             }
         }
     }
