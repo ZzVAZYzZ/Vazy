@@ -65,7 +65,7 @@ body .navbar ul li i {
   font-size: 35px;
 }
 body .navbar ul li:hover {
-  color: var(--core);
+  color: var(--core_change1);
 }
 body .navtheme {
   position: fixed;
@@ -79,7 +79,7 @@ body .navtheme #sun-display i {
   font-size: 5em;
 }
 body .navtheme #sun-display:hover {
-  color: var(--core);
+  color: var(--core_change1);
 }
 body .navtheme #moon-display {
   cursor: pointer;
@@ -89,7 +89,7 @@ body .navtheme #moon-display i {
   font-size: 5em;
 }
 body .navtheme #moon-display:hover {
-  color: var(--core);
+  color: var(--core_change1);
 }
 body .navtheme #color-display {
   position: relative;
@@ -100,7 +100,7 @@ body .navtheme #color-display i {
   font-size: 5em;
 }
 body .navtheme #color-display:hover {
-  color: var(--core);
+  color: var(--core_change1);
 }
 body .navtheme #color-display-menu {
   width: 5em;
