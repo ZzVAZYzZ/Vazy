@@ -1,0 +1,178 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-size: 12px;
+}
+:root{
+    --core1: #FF4757;
+    --core2: #f0932b;
+    --core3: #22a6b3;
+    --core4: #78e08f;
+    --core: var(--core3);
+}
+body{
+    background: #DFE4EA;
+    color: #2F3542;
+    // nav
+    .navbar{
+        width: 280px;
+        height: 100%;
+        background:  #CED6E0;
+        border-right: 1px solid #000000;
+        position: fixed;
+        .vazy_box{
+            width: 200px;
+            height: 160px;
+            margin: 0 auto;
+            text-align: center;
+            margin-top: 80px;
+            border-top: 5px solid var(--core);
+            border-right: 5px solid var(--core);
+            .vazy_text{
+                width: 106px;
+                height: 102px;
+                padding: 35px 49px;
+                font-family: 'Inspiration';
+                font-size: 5em;
+                text-shadow: 0 0 10px #2F3542,
+                0 0 20px #2F3542,
+                0 0 40px #2F3542,
+                0 0 80px #2F3542,
+                0 0 120px #2F3542;
+                transition: ease-in 0.1s;
+            }
+        }
+        ul{
+            margin-top: 165px;
+            li{
+                width: 220px;
+                margin: 0 auto;
+                text-align: center;
+                margin-bottom: 50px;
+                border-bottom: 1px solid #2F3542;
+                font-size: 40px;
+                font-family: "Juice ITC";
+                cursor: pointer;
+                i{
+                    font-size: 35px;
+                }&:hover{
+                    color: var(--core);
+                }
+            }
+        }
+    }
+    .navtheme{
+        position: fixed;
+        top: 100px;
+        right: 25px;
+        #sun-display{
+            cursor: pointer;
+            i{
+                font-size: 5em;
+            }&:hover{
+                color: var(--core);
+            }  
+        }
+        #moon-display{
+            cursor: pointer;
+            display: none;
+            i{
+                font-size: 5em;
+            }&:hover{
+                color: var(--core);
+            }    
+        }
+        #color-display{
+            position: relative;
+            cursor: pointer;
+            margin-top: 50px;
+            i{
+                font-size: 5em;
+            }&:hover{
+                color: var(--core);
+            } 
+        }
+        #color-display-menu{
+            width: 5em;
+            margin-top: 25px;
+            background: #333;
+            display: none;
+            ul{
+                padding: 1em;
+                div{
+                    width: 2.5em;
+                    height: 2.5em;
+                    background-color: #fff;
+                    margin: 0 auto;
+                    border-radius: 100rem;
+                    cursor: pointer;
+                }
+                div:nth-child(1){
+                    margin-bottom: 20px;
+                    background: var(--core1);
+                }
+                div:nth-child(2){
+                    margin-bottom: 20px;
+                    background: var(--core2);
+                }
+                div:nth-child(3){
+                    margin-bottom: 20px;
+                    background: var(--core3);
+                }
+                div:nth-child(4){
+                    background: var(--core4);
+                }
+            }
+        }
+    }
+    // home
+    .parent{
+        width: 1050px;
+        height: 685px;
+        padding-top: 160px;
+        padding-left: 350px;
+        display: flex;
+        flex-direction: row;
+        .son1{
+            padding-top: 135px;
+            height: 400px;
+            display: flex;
+            flex-direction: column;
+            div{
+                font-family: "Juice ITC";
+                width: 400px;
+                font-size: 3em;
+            }
+            div:first-child{
+                text-align: center;
+                span{
+                    font-family: "Inspiration";
+                    font-size: 1.3em;
+                    color: var(--core);
+                }
+            }
+            div:nth-child(2){
+                text-align: center;
+                padding-top: 20px;
+                span{ 
+                    font-size: 1em;
+                    color: var(--core);
+                }
+            }
+            div:last-child{
+                padding-top: 20px;
+                font-size: 2em;
+            }
+        }
+        .son2{
+            img{
+                width: 500px;
+                height: 685px;
+                padding: 20px;
+            }
+        }
+    }
+}

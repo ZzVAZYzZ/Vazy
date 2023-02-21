@@ -1,0 +1,176 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+:root {
+  --core1: #FF4757;
+  --core2: #f0932b;
+  --core3: #22a6b3;
+  --core4: #78e08f;
+  --core: var(--core3);
+}
+
+body {
+  background: #DFE4EA;
+  color: #2F3542;
+}
+body .navbar {
+  width: 280px;
+  height: 100%;
+  background: #CED6E0;
+  border-right: 1px solid #000000;
+  position: fixed;
+}
+body .navbar .vazy_box {
+  width: 200px;
+  height: 160px;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 80px;
+  border-top: 5px solid var(--core);
+  border-right: 5px solid var(--core);
+}
+body .navbar .vazy_box .vazy_text {
+  width: 106px;
+  height: 102px;
+  padding: 35px 49px;
+  font-family: "Inspiration";
+  font-size: 5em;
+  text-shadow: 0 0 10px #2F3542, 0 0 20px #2F3542, 0 0 40px #2F3542, 0 0 80px #2F3542, 0 0 120px #2F3542;
+  transition: ease-in 0.1s;
+}
+body .navbar ul {
+  margin-top: 165px;
+}
+body .navbar ul li {
+  width: 220px;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 50px;
+  border-bottom: 1px solid #2F3542;
+  font-size: 40px;
+  font-family: "Juice ITC";
+  cursor: pointer;
+}
+body .navbar ul li i {
+  font-size: 35px;
+}
+body .navbar ul li:hover {
+  color: var(--core);
+}
+body .navtheme {
+  position: fixed;
+  top: 100px;
+  right: 25px;
+}
+body .navtheme #sun-display {
+  cursor: pointer;
+}
+body .navtheme #sun-display i {
+  font-size: 5em;
+}
+body .navtheme #sun-display:hover {
+  color: var(--core);
+}
+body .navtheme #moon-display {
+  cursor: pointer;
+  display: none;
+}
+body .navtheme #moon-display i {
+  font-size: 5em;
+}
+body .navtheme #moon-display:hover {
+  color: var(--core);
+}
+body .navtheme #color-display {
+  position: relative;
+  cursor: pointer;
+  margin-top: 50px;
+}
+body .navtheme #color-display i {
+  font-size: 5em;
+}
+body .navtheme #color-display:hover {
+  color: var(--core);
+}
+body .navtheme #color-display-menu {
+  width: 5em;
+  margin-top: 25px;
+  background: #333;
+  display: none;
+}
+body .navtheme #color-display-menu ul {
+  padding: 1em;
+}
+body .navtheme #color-display-menu ul div {
+  width: 2.5em;
+  height: 2.5em;
+  background-color: #fff;
+  margin: 0 auto;
+  border-radius: 100rem;
+  cursor: pointer;
+}
+body .navtheme #color-display-menu ul div:nth-child(1) {
+  margin-bottom: 20px;
+  background: var(--core1);
+}
+body .navtheme #color-display-menu ul div:nth-child(2) {
+  margin-bottom: 20px;
+  background: var(--core2);
+}
+body .navtheme #color-display-menu ul div:nth-child(3) {
+  margin-bottom: 20px;
+  background: var(--core3);
+}
+body .navtheme #color-display-menu ul div:nth-child(4) {
+  background: var(--core4);
+}
+body .parent {
+  width: 1050px;
+  height: 685px;
+  padding-top: 160px;
+  padding-left: 350px;
+  display: flex;
+  flex-direction: row;
+}
+body .parent .son1 {
+  padding-top: 135px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+}
+body .parent .son1 div {
+  font-family: "Juice ITC";
+  width: 400px;
+  font-size: 3em;
+}
+body .parent .son1 div:first-child {
+  text-align: center;
+}
+body .parent .son1 div:first-child span {
+  font-family: "Inspiration";
+  font-size: 1.3em;
+  color: var(--core);
+}
+body .parent .son1 div:nth-child(2) {
+  text-align: center;
+  padding-top: 20px;
+}
+body .parent .son1 div:nth-child(2) span {
+  font-size: 1em;
+  color: var(--core);
+}
+body .parent .son1 div:last-child {
+  padding-top: 20px;
+  font-size: 2em;
+}
+body .parent .son2 img {
+  width: 500px;
+  height: 685px;
+  padding: 20px;
+}/*# sourceMappingURL=style.css.map */
