@@ -4,16 +4,15 @@
   padding: 0;
   list-style: none;
   text-decoration: none;
-  font-size: 12px;
 }
 
 :root {
   --core_key: #e056fd;
-  --core1: #FF4757;
-  --core2: #f0932b;
+  --core1: #eb3b5a;
+  --core2: #e67e22;
   --core3: #22a6b3;
-  --core4: #78e08f;
-  --core5: #DFE4EA;
+  --core4: #27ae60;
+  --core5: #CED6E0;
   --core6: #2D3436;
   --core_change1: var(--core3);
   --core_change2: var(--core5);
@@ -21,15 +20,15 @@
 }
 
 body {
-  background: #DFE4EA;
+  background: #CED6E0;
   color: #2F3542;
   z-index: -2;
 }
 body .navbar {
   width: 280px;
   height: 100%;
-  background: #CED6E0;
-  border-right: 1px solid #000000;
+  background: #DFE4EA;
+  border-right: 1px solid #2F3542;
   position: fixed;
 }
 body .navbar .vazy_box {
@@ -46,18 +45,18 @@ body .navbar .vazy_box .vazy_text {
   height: 102px;
   padding: 35px 49px;
   font-family: "Inspiration";
-  font-size: 5em;
-  text-shadow: 0 0 10px #2F3542, 0 0 20px #2F3542, 0 0 40px #2F3542, 0 0 80px #2F3542, 0 0 120px #2F3542;
+  font-size: 3em;
   transition: ease-in 0.1s;
 }
 body .navbar ul {
-  margin-top: 165px;
+  margin-top: 100px;
 }
 body .navbar ul li {
   width: 220px;
   margin: 0 auto;
+  padding: 10px;
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 10px;
   border-bottom: 1px solid #2F3542;
   font-size: 40px;
   font-family: "Juice ITC";
@@ -71,7 +70,7 @@ body .navbar ul li:hover {
 }
 body .navtheme {
   position: fixed;
-  top: 100px;
+  top: 60px;
   right: 25px;
   z-index: 5;
 }
@@ -137,48 +136,53 @@ body .navtheme #color-display-menu ul div:nth-child(3) {
 body .navtheme #color-display-menu ul div:nth-child(4) {
   background: var(--core4);
 }
-body .parent {
-  width: 1050px;
-  height: 685px;
-  padding-top: 160px;
-  padding-left: 350px;
+body .home-section {
+  width: 80%;
+  position: fixed;
+  top: 0;
+  left: 280px;
+  right: 0;
+}
+body .home-section .parent {
+  padding-top: 200px;
+  width: 60%;
+  margin: 0 auto;
   display: flex;
   flex-direction: row;
 }
-body .parent .son1 {
+body .home-section .parent .son1 {
   padding-top: 135px;
-  height: 400px;
+  height: clamp(300px, 30vw, 500px);
   display: flex;
   flex-direction: column;
 }
-body .parent .son1 div {
+body .home-section .parent .son1 div {
   font-family: "Juice ITC";
-  width: 400px;
+  width: clamp(300px, 30vw, 500px);
   font-size: 3em;
 }
-body .parent .son1 div:first-child {
+body .home-section .parent .son1 div:first-child {
   text-align: center;
 }
-body .parent .son1 div:first-child span {
+body .home-section .parent .son1 div:first-child span {
   font-family: "Inspiration";
   font-size: 1.3em;
   color: var(--core_change1);
 }
-body .parent .son1 div:nth-child(2) {
+body .home-section .parent .son1 div:nth-child(2) {
   padding-top: 20px;
   position: relative;
 }
-body .parent .son1 div:nth-child(2) span {
+body .home-section .parent .son1 div:nth-child(2) span {
   font-size: 1em;
-  color: var(--core_change1);
 }
-body .parent .son1 div:nth-child(2)::before {
+body .home-section .parent .son1 div:nth-child(2)::before {
   content: "";
   position: absolute;
   top: 0;
   right: 0;
+  width: clamp(150px, 15vw, 400px);
   height: 100%;
-  width: 50%;
   background: var(--core_change2);
   border-left: 2px solid var(--core_change3);
   animation: animate 6s steps(12) infinite;
@@ -191,10 +195,10 @@ body .parent .son1 div:nth-child(2)::before {
     left: 24%;
   }
   30% {
-    left: 60%;
+    left: 70%;
   }
   40% {
-    left: 60%;
+    left: 70%;
   }
   50% {
     left: 24%;
@@ -203,24 +207,22 @@ body .parent .son1 div:nth-child(2)::before {
     left: 24%;
   }
   80% {
-    left: 60%;
+    left: 70%;
   }
   90% {
-    left: 60%;
+    left: 70%;
   }
   100% {
     left: 24%;
   }
 }
-body .parent .son1 div:last-child {
+body .home-section .parent .son1 div:last-child {
   padding-top: 20px;
-  font-size: 2em;
+  font-size: 2.5em;
 }
-body .parent .son2 img {
+body .home-section .parent .son2 img {
   width: 500px;
   height: 500px;
-  padding: 50px;
-  border-radius: 100rem;
-  border: 5px solid var(--core_change1);
+  border-left: 3px solid var(--core_change1);
   position: relative;
-}/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=index.css.map */
