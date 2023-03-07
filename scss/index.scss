@@ -23,25 +23,26 @@ body{
     z-index: -2;
     // nav
     .navbar{
-        width: 280px;
+        width: clamp(100px,30vw,280px);
         height: 100%;
         background:  #DFE4EA;
         border-right: 1px solid #2F3542;
         position: fixed;
         .vazy_box{
-            width: 200px;
-            height: 160px;
+            width: 80%;
+            height: clamp(100px,30vw,160px);
             margin: 0 auto;
             text-align: center;
             margin-top: 80px;
             border-top: 5px solid var(--core_change1);
             border-right: 5px solid var(--core_change1);
             .vazy_text{
-                width: 106px;
-                height: 102px;
-                padding: 35px 49px;
+                width: 80%;
+                height: 100%;
+                margin: 0 auto;
+                padding-top: clamp();
                 font-family: 'Inspiration';
-                font-size: 3em;
+                font-size: clamp(2em,4vw,4em);
                 transition: ease-in 0.1s;
             }
         }
@@ -133,6 +134,7 @@ body{
     // home
     .home-section{
         width: 80%;
+        height: 100%;
         position: fixed;
         top: 0;
         left: 280px;
@@ -144,17 +146,18 @@ body{
             display: flex;
             flex-direction: row;
             .son1{
-                padding-top: 135px;
-                height: clamp(300px,30vw,500px);
+                padding: 50px;
+                width: clamp(300px,30vw,500px);
+                // height: clamp(300px,30vw,500px);
                 display: flex;
                 flex-direction: column;
                 div{
                     font-family: "Juice ITC";
                     width: clamp(300px,30vw,500px);
-                    font-size: 3em;
+                    font-size: clamp(2em,2.5vw,3em);
                 }
                 div:first-child{
-                    text-align: center;
+                    // text-align: center;
                     span{
                         font-family: "Inspiration";
                         font-size: 1.3em;
@@ -162,6 +165,7 @@ body{
                     }
                 }
                 div:nth-child(2){
+                    width: 100%;
                     padding-top: 20px;
                     position: relative;
                     span{ 
@@ -214,15 +218,16 @@ body{
                     }
                 }
                 div:last-child{
+                    width: 100%;
                     padding-top: 20px;
-                    font-size: 2.5em;
+                    font-size: clamp(1em,2vw,2.5em);
                 }
             }
             .son2{
                 img{
-                    // clamp(300px,30vw,500px)
-                    width: 500px;
-                    height: 500px;
+                    padding: 50px;
+                    width: clamp(100px,30vw,500px);
+                    height: clamp(100px,30vw,500px);
                     border-left: 3px solid var(--core_change1);
                     position: relative;
                 }
@@ -230,4 +235,9 @@ body{
         }
     }
     
+}
+@media(max-width: 1023px){
+    .son2{
+        display: none;
+    }
 }

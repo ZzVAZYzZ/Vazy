@@ -25,15 +25,15 @@ body {
   z-index: -2;
 }
 body .navbar {
-  width: 280px;
+  width: clamp(100px, 30vw, 280px);
   height: 100%;
   background: #DFE4EA;
   border-right: 1px solid #2F3542;
   position: fixed;
 }
 body .navbar .vazy_box {
-  width: 200px;
-  height: 160px;
+  width: 80%;
+  height: clamp(100px, 30vw, 160px);
   margin: 0 auto;
   text-align: center;
   margin-top: 80px;
@@ -41,11 +41,11 @@ body .navbar .vazy_box {
   border-right: 5px solid var(--core_change1);
 }
 body .navbar .vazy_box .vazy_text {
-  width: 106px;
-  height: 102px;
-  padding: 35px 49px;
+  width: clamp(60px, 30vw, 106px);
+  height: clamp(58px, 30vw, 102px);
+  margin: 0 auto;
   font-family: "Inspiration";
-  font-size: 3em;
+  font-size: clamp(2em, 4vw, 4em);
   transition: ease-in 0.1s;
 }
 body .navbar ul {
@@ -138,6 +138,7 @@ body .navtheme #color-display-menu ul div:nth-child(4) {
 }
 body .home-section {
   width: 80%;
+  height: 100%;
   position: fixed;
   top: 0;
   left: 280px;
@@ -151,18 +152,15 @@ body .home-section .parent {
   flex-direction: row;
 }
 body .home-section .parent .son1 {
-  padding-top: 135px;
-  height: clamp(300px, 30vw, 500px);
+  padding: 50px;
+  width: clamp(300px, 30vw, 500px);
   display: flex;
   flex-direction: column;
 }
 body .home-section .parent .son1 div {
   font-family: "Juice ITC";
   width: clamp(300px, 30vw, 500px);
-  font-size: 3em;
-}
-body .home-section .parent .son1 div:first-child {
-  text-align: center;
+  font-size: clamp(2em, 2.5vw, 3em);
 }
 body .home-section .parent .son1 div:first-child span {
   font-family: "Inspiration";
@@ -170,6 +168,7 @@ body .home-section .parent .son1 div:first-child span {
   color: var(--core_change1);
 }
 body .home-section .parent .son1 div:nth-child(2) {
+  width: 100%;
   padding-top: 20px;
   position: relative;
 }
@@ -217,12 +216,20 @@ body .home-section .parent .son1 div:nth-child(2)::before {
   }
 }
 body .home-section .parent .son1 div:last-child {
+  width: 100%;
   padding-top: 20px;
-  font-size: 2.5em;
+  font-size: clamp(1em, 2vw, 2.5em);
 }
 body .home-section .parent .son2 img {
-  width: 500px;
-  height: 500px;
+  padding: 50px;
+  width: clamp(100px, 30vw, 500px);
+  height: clamp(100px, 30vw, 500px);
   border-left: 3px solid var(--core_change1);
   position: relative;
+}
+
+@media (max-width: 1023px) {
+  .son2 {
+    display: none;
+  }
 }/*# sourceMappingURL=index.css.map */
